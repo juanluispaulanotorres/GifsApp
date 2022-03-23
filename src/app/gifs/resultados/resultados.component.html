@@ -1,0 +1,18 @@
+<!-- <ul>
+    <li *ngFor="let item of resultados">
+        {{item.title}}
+    </li>
+</ul> -->
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn" *ngFor="let item of resultados">               // animate__animated animate__fadeIn: Clases de css (animación)
+        <div class="card">
+            <img [src]="item.images.downsized_medium.url" [alt]="item.title" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{item.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
